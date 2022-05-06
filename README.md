@@ -1,2 +1,1 @@
-# zsv-pruzkum
-# zsv-pruzkum
+# Všechno
