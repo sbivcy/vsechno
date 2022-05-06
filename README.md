@@ -2,5 +2,6 @@
 
 ## Obsah
 
-### zsv-pruzkum
-Programy použité ke zpracování dat na sociologický průzkum.
+| složka | jazyk | popis |
+|--------|-------|-------|
+| pruzkum-zsv | Python | Programy použité ke zpracování dat na sociologický průzkum. |
