@@ -1,20 +1,18 @@
-from other import load_csv, file_write, bar_chart, pie_chart
+from funcs import load_csv, file_write, bar_chart, pie_chart
+from settings import *
 
 
 def main():
-    question_count = 12
-
-    answers = load_csv("ans.csv", question_count)
-
+    answers = load_csv(csv_name, question_count)
     for i in range(0, question_count):
-        if i in (1, 3, 5, 7, 9, 11):
-            file_write(answers, i)
-        elif i in (0, 10):
-            bar_chart(answers, i)
-        elif i == 6:
-            pie_chart(answers, i, True)
-        else:
-            pie_chart(answers, i, False)
+        if i in open_questions:
+            file_write(answers, out_name, i)
+        elif i in range_questions:
+            bar_chart(answers, colors, i)
+        elif i in yes_no_questions:
+            pie_chart(answers, colors, i)
+        elif i in yes_no_idk_questions:
+            pie_chart(answers, colors, i, True)
 
 
 if __name__ == "__main__":
