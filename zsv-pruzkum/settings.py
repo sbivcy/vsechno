@@ -4,7 +4,7 @@ question_count = 12
 # Name of file to load
 csv_name = "example.csv"
 
-# Output file name:
+# Output file name
 out_name = "answers.txt"
 
 # Numbers of questions with open answers, starting at 0
