@@ -64,7 +64,7 @@ def pie_chart(answers: list, colors: list, i: int, has_idk: bool = False):
                 counts[1] += 1
 
     fig, ax = plt.subplots()
-    ax.axis([0.5, 2.5, 0, len(answers[i][1:])])
+    ax.axis([0.1, 0, 0, len(answers[i][1:])])
     ax.pie(counts, colors=colors, labels=labels)
     ax.legend(bbox_to_anchor=(0, 1))
     plt.title(answers[i][0])

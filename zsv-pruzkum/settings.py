@@ -2,7 +2,7 @@
 question_count = 12
 
 # Name of file to load
-csv_name = "example.csv"
+csv_name = "Průzkum ZSV.csv"
 
 # Output file name
 out_name = "answers.txt"
