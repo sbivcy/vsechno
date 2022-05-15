@@ -23,4 +23,4 @@ range_questions = [0, 10]
 colors = [[0.1, 0.8, 0.1], [1, 0.2, 0.2], [0.2, 0.2, 1]]
 
 # boolean for colored terminal
-colored_terminal = "True"
+color_terminal = "True"
