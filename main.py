@@ -15,8 +15,11 @@ def main():
             pie_chart(answers, colors, i)
         elif i in yes_no_idk_questions:
             pie_chart(answers, colors, i, True)
-        print(f"\033[9{i%2+2}mQuestion {i} processed in: {round(perf_counter()-t, 4)} s")
-
+        if color_terminal:
+            print(f"\033[9{i%2+2}mQuestion {i} processed in: {round(perf_counter()-t, 4)} s")
+        else:
+            print(f"Question {i} processed in: {round(perf_counter()-t, 4)} s")
+                
 
 if __name__ == "__main__":
     main()
